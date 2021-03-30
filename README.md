@@ -1,68 +1,59 @@
 # NEWS-PROJECT
 AET
-This project is a web development exercise.
+Getting Started with Create React App
+This project was bootstrapped with Create React App.
 
-Goal
-You are going to make modifications to a webapp using the Polymer 2 library around the WebComponents.
+Available Scripts
+In the project directory, you can run:
 
-This application displays articles retrieved from NewsAPI , which aggregates several news sources. It will also filter the content displayed.
+npm start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
 
-The targeted browsers are the latest versions of Firefox, Chromium and Edge.
+The page will reload if you make edits.
+You will also see any lint errors in the console.
 
-Method of working
-The code is versioned on git. You will respect the following practices:
+npm test
+Launches the test runner in the interactive watch mode.
+See the section about running tests for more information.
 
-you work in a separate branch of master
+npm run build
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-your commits are simple (maximum functionality) and documented in English
+The build is minified and the filenames include the hashes.
+Your app is ready to be deployed!
 
-The tasks are quite independent, deal with them at your own pace.
+See the section about deployment for more information.
 
-If you are feeling creative, feel free to go beyond exercise (but always stick to the specifications given).
+npm run eject
+Note: this is a one-way operation. Once you eject, you can’t go back!
 
-Prerequisites
-Set up a working environment for Polymer:
+If you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
 
-install nodejsand npmon the machine
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-install bowerand polymer-cli:npm install -g bower polymer-cli
+You don’t have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Preparation
-Clone this git repository and explore the files
+Learn More
+You can learn more in the Create React App documentation.
 
-To install the project dependencies, run the command bower installin the project folder
+To learn React, check out the React documentation.
 
-To test the application locally, run the command polymer serve
+Code Splitting
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-Exercises
-Editing the item news-card
-The element news-carddisplays a news, composed of a title, its author, an image, a publication date, a description and a link to the article.
+Analyzing the Bundle Size
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-Navigate to the demo url (ex .: http://127.0.0.1:port_number/src/news-card/demo/index.html )
+Making a Progressive Web App
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-Add the following properties to the element: title, author, description, imgand hrefa String and publishedAttype Date.
+Advanced Configuration
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-Edit the element template and add styling to match the spec cf img.
+Deployment
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-Convert the date to a readable English format.
-
-We would like the description to be revealed when hovering over the image, over it, make the necessary changes.
-
-Add to the image, a placeholder of your choice in base64.
-
-When clicking on the element, the link should open in a new tab.
-
-Increase the shadow around the element when the cursor is over it.
-
-Optional - You can modify the item's demo news-cardto fetch data from file data.jsonusing the Fetch API. In the demo file news-card/demo/index.html, listen to the event WebComponentsReadyon the document, then retrieve the contents of the file data.json, select the element news-cardand populate it with this data.
-
-Data recovery from NewsAPI
-Create a new API key at https://newsapi.org/ and configure the item <news-list>in search-new-app/search-new-app.html.
-
-Navigate to the url of the application served by the command polymer serve.
-
-Create a new element <news-list>which takes as input the id of a source and an API key.
-
-it uses the item iron-ajaxto generate a query that retrieves articles when the source changes.
-it maintains a property newssaving the content of the last request.
-it iterates over the news to display them with <news-card>.
+npm run build fails to minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
